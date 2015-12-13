@@ -14,9 +14,10 @@ app.use(express.static(__dirname + '/public'));
 // setup render engine, hogan
 app.set('view engine', 'ejs');
 
+//hide for security purposes
 instagram.use({
-    client_id: '2571c3a36a7a4a60809651f64bdfe8d3',
-    client_secret: 'd6971f3f37b446f7b6ccb35b70df0e6e'
+    client_id: '',
+    client_secret: ''
 });
 
 app.get('/', function(req, res){
